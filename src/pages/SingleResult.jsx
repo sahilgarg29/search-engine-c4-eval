@@ -6,7 +6,7 @@ function SingleResult() {
 
   const result = useSelector((store) => {
     let res = store.results.filter((e) => {
-      return e.id == id;
+      return e.id.toString() === id.toString();
     });
 
     return res[0];
