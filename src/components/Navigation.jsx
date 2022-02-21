@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import {
   filterExplicit,
   sortByDATEASC,
@@ -16,7 +15,6 @@ function Navigation({ setParams }) {
 
   const dispatch = useDispatch();
 
-  // const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     setParams({ q: search });
